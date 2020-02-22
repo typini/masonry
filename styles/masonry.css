@@ -1,0 +1,94 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+    width: 100%;
+    padding: 20px;
+}
+
+.backdrop {
+    border: 1px solid black;
+    background-color: rgb(208,211,212);
+    padding: 45px 65px;
+    max-width: 520px;
+}
+
+.tilesContainer {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 220px 220px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-auto-rows: 10px;
+}
+
+.masonry {
+    margin: 12px;
+    box-sizing: border-box;
+    background-color: #FFF;
+    border: 1px solid black;
+    //max-width: 220px;
+    padding: 7px;
+}
+
+.heading {
+    padding-top: 7px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.content {
+    padding-top: 3px;
+    font-size: 0.7em;
+    font-weight: lighter;
+}
+
+.meta {
+    padding-top: 20px;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.image {
+    box-sizing: border-box;
+    background-color: rgb(211, 208, 208);
+    width:  100%;
+    max-height: 150px;
+    border: 1px solid black;
+}
+
+.noImage {
+    width: 40px;
+    height: 4px;
+    background-color: rgb(223, 70, 97);
+    margin-top: 5px;
+    margin-bottom: 17px;
+    margin-left: 2px;
+}
+
+.hide {
+    display: none;
+}
+
+.loadMore {
+    position: static;
+    margin: auto;
+    height: 35px;
+    width: 120px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.loadMoreContainer{
+    margin-top: 35px;
+    position: relative;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    border: none;
+}
